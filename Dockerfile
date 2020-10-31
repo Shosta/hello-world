@@ -10,6 +10,8 @@ LABEL \
 
 EXPOSE 3000
 
+COPY . .
+
 # Install adb tools, unzip, wget, signapk and apktool
 RUN apt update -y && apt install -y --no-install-recommends \
     bash-completion \
